@@ -1,1 +1,2 @@
-# RS-School-JS-Front-end-2022Q3
+# RS School: JavaScript/Front-end 2022Q3
+### From 04/09/2022 To ...
