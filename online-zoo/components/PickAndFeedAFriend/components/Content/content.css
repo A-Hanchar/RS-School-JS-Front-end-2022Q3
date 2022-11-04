@@ -1,0 +1,32 @@
+@import url(./Title/title.css);
+@import url(./HowItWork/howItWork.css);
+@import url(./FormContent/formContent.css);
+
+.pick-and-feed-a-friend-content-wrapper {
+  display: grid;
+  gap: 2.5rem;
+
+  padding: 2.5rem 5.755rem 3.875rem;
+
+  backdrop-filter: blur(0.125rem);
+  border-radius: 1.25rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .pick-and-feed-a-friend-content-wrapper {
+    padding: 1.875rem 3rem 3.125rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pick-and-feed-a-friend-content-wrapper {
+    padding: 0.625rem 1.25rem 1.875rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .pick-and-feed-a-friend-content-wrapper {
+    padding: 1.25rem 0 2.5rem;
+    gap: 1.25rem;
+  }
+}

@@ -1,0 +1,40 @@
+@import url(./Card/card.css);
+@import url(./NavigationButtons/navigationButtons.css);
+
+:root {
+  --petsSliderContentRowGap: 1.25rem;
+  --petsSliderContentColumnGap: 1.875rem;
+}
+
+.pets-slider-wrapper {
+
+}
+
+.pets-slider-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: var(--petsSliderContentColumnGap);
+  grid-row-gap: var(--petsSliderContentRowGap);
+}
+
+@media screen and (max-width: 1399px) {
+  :root {
+    --petsSliderContentRowGap: calc(var(--buttonSliderNavigationWidth) + 1.875rem);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .pets-slider-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  :root {
+    --petsSliderContentRowGap: 1.25rem;
+  }
+
+  .pets-slider-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

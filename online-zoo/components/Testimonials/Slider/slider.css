@@ -1,0 +1,39 @@
+@import url(./Card/card.css);
+@import url(./Scroll/scroll.css);
+
+.testimonials-slider-wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1875rem;
+}
+
+.testimonials-slider-wrapper div.testimonials-list {
+  width: 100%;
+
+  display: grid;
+  align-items: stretch;
+  justify-content: center;
+  grid-gap: 1.8125rem;
+  grid-template-columns: none;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1199px) {
+  .testimonials-slider-wrapper {
+    gap: 1.1875rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .testimonials-slider-wrapper div.testimonials-list {
+    grid-template-rows: repeat(3, auto);
+    gap: 0.9375rem;
+    grid-auto-columns: auto;
+  }
+}

@@ -1,0 +1,1 @@
+export const isClientWidthMore400 = () => document.documentElement.clientWidth > 400

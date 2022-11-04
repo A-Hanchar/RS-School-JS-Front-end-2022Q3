@@ -1,0 +1,29 @@
+button {
+  transition: 0.3s;
+  line-height: 140%;
+}
+
+.button-common-styles {
+  width: 18.625rem;
+  height: 3.375rem;
+
+  cursor: pointer;
+}
+
+.button-ORRANGE {
+  background-color: var(--orrange);
+  background: var(--orrangeGradient);
+  border: 0;
+  
+  color: var(--white);
+}
+
+.button-ORRANGE:hover {
+  background-color: var(--orrangeDark);
+  background: var(--orrangeDarkGradient);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}

@@ -1,0 +1,1 @@
+export const isClientWidthMore991 = () => document.documentElement.clientWidth > 991

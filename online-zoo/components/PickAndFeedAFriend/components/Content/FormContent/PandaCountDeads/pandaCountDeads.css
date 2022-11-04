@@ -1,0 +1,25 @@
+@import url(./DeadInformation/deadInformation.css);
+
+.panda-count-deads {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.panda-count-deads > img {
+  width: 17.75rem;
+  height: 12.5rem;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 575px) {
+  .panda-count-deads {
+    gap: 2.25rem;
+  }
+
+  .panda-count-deads > img {
+    max-width: 10rem;
+    height: auto;
+  }
+}

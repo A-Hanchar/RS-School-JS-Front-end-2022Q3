@@ -1,0 +1,163 @@
+:root {
+  --petsCardWidth: 22.875rem;
+  --sectionPetsContentBorderRadius: 0.3125rem;
+  --sectionPetsAnimationTime: 1.5s;
+}
+
+@media screen and (max-width: 1399px) {
+  :root {
+    --petsCardWidth: 18.4375rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  :root {
+    --petsCardWidth: 100%;
+  }
+}
+
+.pets-slider-card {
+  width: var(--petsCardWidth);
+  box-sizing: border-box;
+
+  display: grid;
+  
+  border: 0.0625rem solid var(--orrange);
+  border-radius: var(--sectionPetsContentBorderRadius);
+
+  animation: petsSliderAppearanceCard 1s;
+}
+
+.pets-slider-card > img {
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+
+  border-top-left-radius: var(--sectionPetsContentBorderRadius);
+  border-top-right-radius: var(--sectionPetsContentBorderRadius);
+
+  transition: all 0.75s;
+}
+
+.pets-slider-card .card-description {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  grid-gap: 0.6875rem;
+
+  padding: 0.5rem 0.75rem 0.90625rem 1rem;
+
+  z-index: -1;
+}
+
+.pets-slider-card:hover > img {
+  transform: scale(1.04);
+}
+
+.pets-slider-card .card-description h2 {
+  font-size: 1rem;
+}
+
+.pets-slider-card .card-description p {
+  font-size: 0.9375rem;
+}
+
+.pets-slider-card:hover .card-description {
+  width: 100%;
+  z-index: 9;
+
+  animation: var(--sectionPetsAnimationTime) alternate petsSliderMoveContent forwards;
+}
+
+.pets-slider-card:hover .card-description div {
+  z-index: 9;
+}
+
+.pets-slider-card:hover .card-description::after {
+  content: '';
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0,0,0, .5);
+  animation: var(--sectionPetsAnimationTime) alternate petsSliderAddingShadow forwards;
+}
+
+.pets-slider-card .card-description img {
+  max-width: 3.125rem;
+  max-height: 3.125rem;
+  object-fit: cover;
+
+  z-index: 1;
+}
+
+@media screen and (max-width: 1199px) {
+  .pets-slider-card .card-description {
+    padding: 0.5rem 0.625rem 0.8125rem 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pets-slider-card .card-description {
+    padding: 0.375rem 0.6875rem 0.625rem;
+  }
+
+  .pets-slider-card .card-description h2 {
+    font-size: 0.779375rem;
+  }
+
+  .pets-slider-card .card-description p {
+    font-size: 0.730625rem;
+  }
+
+  .pets-slider-card .card-description img {
+    max-width: 2.3125rem;
+    max-height: 1.8125rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .pets-slider-card {
+    max-width: 17.8125rem;
+  }
+
+  .pets-slider-card .card-description {
+    padding-top: 0.5rem;
+  }
+}
+
+
+@keyframes petsSliderMoveContent {
+  from {
+    transform: translateY(0%);
+    color: var(--black);
+  }
+  
+  to {
+    transform: translateY(-100%);
+    color: var(--white);
+  }
+}
+
+@keyframes petsSliderAddingShadow {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes petsSliderAppearanceCard {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

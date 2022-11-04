@@ -1,0 +1,10 @@
+.social-link-icon {
+  width: 1.625rem;
+  height: 1.625rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 50%;
+}

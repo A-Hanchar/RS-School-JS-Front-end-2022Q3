@@ -1,0 +1,29 @@
+.testimonials-title {
+  margin-bottom: 3.3125rem;
+}
+
+.testimonials-title h2 {
+  font-size: 2.25rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .testimonials-title {
+    margin-bottom: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .testimonials-title {
+    margin-bottom: 2.1875rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .testimonials-title {
+    margin-bottom: 1.25rem;
+  }
+
+  .testimonials-title h2 {
+    font-size: 1.5rem;
+  }
+}

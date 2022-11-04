@@ -1,0 +1,42 @@
+.pick-and-feed-a-friend-content-title {
+  display: grid;
+  grid-gap: 2.1875rem;
+}
+
+.pick-and-feed-a-friend-content-title h2 {
+  font-size: 3rem;
+}
+
+.pick-and-feed-a-friend-content-title p {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .pick-and-feed-a-friend-content-title {
+    gap: 0.9375rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .pick-and-feed-a-friend-content-title h2 {
+    font-size: 2.625rem;
+  }
+
+  .pick-and-feed-a-friend-content-title p {
+    font-size: 1.375rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .pick-and-feed-a-friend-content-title {
+    grid-gap: 0.625rem;
+  }
+
+  .pick-and-feed-a-friend-content-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .pick-and-feed-a-friend-content-title p {
+    font-size: 1.125rem;
+  }
+}

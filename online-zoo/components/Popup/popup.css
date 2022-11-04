@@ -1,0 +1,89 @@
+:root {
+  --popupCommonPadding: 1.875rem;
+  --popupCloseButtonSize: 1.5625rem;
+}
+
+@media screen and (max-width: 991px) {
+  :root {
+    --popupCommonPadding: 0.625rem;
+  }
+}
+
+.popup-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: calc(100vw - (var(--popupCommonPadding) * 2));
+  height: 100vh;
+
+  padding: var(--popupCommonPadding) var(--popupCommonPadding) 2.5rem;
+
+  z-index: 9999;
+}
+
+.popup-wrapper.open {
+  animation: popupWrapperOpen 0.5s;
+}
+
+.popup-wrapper.close {
+  animation: popupWrapperClose 0.5s;
+}
+
+.popup-wrapper .popup-close {
+  width: var(--popupCloseButtonSize);
+  height: var(--popupCloseButtonSize);
+  
+  position: absolute;
+  top: var(--popupCommonPadding);
+  right: var(--popupCommonPadding);
+  
+  background: none;
+  
+  border: none;
+}
+
+.popup-wrapper .popup-close::before,
+.popup-wrapper .popup-close::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  top: calc(100% / 2);
+
+  width: 100%;
+  height: 0.3125rem;
+
+  background: var(--orrangeGradient);
+}
+
+.popup-wrapper .popup-close::before {
+  transform: rotate(45deg);
+}
+
+.popup-wrapper .popup-close::after {
+  transform: rotate(-45deg);
+}
+
+
+@keyframes popupWrapperOpen {
+  from {
+    width: 0;
+    height: 0;
+  }
+
+  to {
+    width: calc(100vw - (var(--popupCommonPadding) * 2));
+    height: 100vh;
+  }
+}
+
+@keyframes popupWrapperClose {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0);
+  }
+}

@@ -1,0 +1,62 @@
+.how-it-work-card {
+  width: 10.5rem;
+}
+
+.how-it-work-card .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 10.5rem;
+  background-color: var(--white);
+  border: 0.0625rem solid var(--orrange);
+  border-radius: 0.3125rem;
+  margin-bottom: 1.875rem;
+}
+
+.how-it-work-card:not(:last-child) .icon::after{
+  content: '';
+  width: 4.375rem;
+  height: 2.25rem;
+  background-image: url(/online-zoo/icons/arrow-right.png);
+  position: absolute;
+  top: calc(50% - 2.25rem / 2);
+  right: calc(-1 * (8.125rem - 4.375rem / 2));
+  background-repeat: no-repeat;
+}
+
+.how-it-work-card p {
+  line-height: 1.4rem;
+}
+
+@media screen and (max-width: 991px) {
+  .how-it-work-card:not(:last-child) .icon::after{
+    width: 5.5625rem;
+    height: 1.8125rem;
+
+    background-image: url(/online-zoo/icons/arrow-top-arc-green.png);
+    
+    top: -1.125rem;
+    right: -3.625rem;
+
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .how-it-work-card {
+    justify-self: center;
+  }
+
+  .how-it-work-card:not(:last-child) .icon::after {
+    transform: rotateZ(80deg);
+    top: auto;
+    bottom: -3.75rem;
+    right: -3.75rem;
+  }
+
+  .how-it-work-card .icon {
+    margin-bottom: 0.625rem;
+  }
+}

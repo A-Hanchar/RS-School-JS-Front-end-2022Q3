@@ -1,0 +1,28 @@
+.subscribe-email {
+  grid-area: inputEmail / inputEmail / inputEmail / inputEmail;
+  
+  width: 14.25rem;
+  height: 2.625rem;
+  
+  background: none;
+  
+  border-width: 0.0625rem;
+  border-style: solid;
+  
+  padding: 0.625rem;
+  box-sizing: border-box;
+  
+  outline: none;
+}
+
+.subscribe-email.border-orrange {
+  border-color: var(--orrange);
+}
+
+.subscribe-email.border-red {
+  border-color: var(--red);
+}
+
+.subscribe-email.border-green {
+  border-color: var(--green);
+}

@@ -1,0 +1,19 @@
+@import url(./components/Link/link.css);
+@import url(./components/BurgerButton/burgerButton.css);
+@import url(./components/NavigationPopup/navigationPopup.css);
+
+nav ul {
+  height: 100%;
+  
+  list-style: none;
+  
+  display: flex;
+  align-items: center;
+  gap: 3.625rem;
+}
+
+@media screen and (max-width: 1199px) {
+  nav ul {
+    gap: 3rem;
+  }
+}

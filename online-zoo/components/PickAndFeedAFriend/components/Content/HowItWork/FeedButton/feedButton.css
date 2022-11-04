@@ -1,0 +1,24 @@
+button.how-it-work-feed-button {
+  margin-top: 1.25rem;
+  border-radius: 1.5625rem;
+}
+
+@media screen and (max-width: 1199px) {
+  button.how-it-work-feed-button {
+    margin-top: 1.6875rem
+  }
+}
+
+@media screen and (max-width: 767px) {
+  button.how-it-work-feed-button {
+    margin-top: 1.25rem;
+    margin-bottom: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  button.how-it-work-feed-button {
+    margin-top: 1.1875rem;
+    margin-bottom: 0;
+  }
+}

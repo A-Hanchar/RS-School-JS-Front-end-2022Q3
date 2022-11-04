@@ -1,0 +1,22 @@
+@import url(./components/Link/link.css);
+
+ul.social-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+@media screen and (max-width: 991px) {
+  ul.social-links {
+    gap: 1.25rem;
+  }
+}
+
+
+@media screen and (max-width: 639px) {
+  ul.social-links {
+    flex-direction: row;
+    gap: 1.875rem;
+  }
+}

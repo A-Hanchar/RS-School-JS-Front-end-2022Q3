@@ -1,0 +1,30 @@
+button.pick-and-feed-a-friend-form-submit-button {
+  border-radius: 1.5625rem;
+  margin-top: 0.4375rem;
+}
+
+@media screen and (max-width: 1199px) {
+  button.pick-and-feed-a-friend-form-submit-button {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  button.pick-and-feed-a-friend-form-submit-button {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  button.pick-and-feed-a-friend-form-submit-button {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  button.pick-and-feed-a-friend-form-submit-button {
+    margin-top: 0.375rem;
+    margin-bottom: 0.375rem;
+  }
+}
