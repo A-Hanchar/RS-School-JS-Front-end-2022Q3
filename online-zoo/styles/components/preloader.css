@@ -1,0 +1,65 @@
+body[data-page-is-loaded="false"] {
+  overflow: hidden;
+}
+
+body[data-page-is-loaded="false"] header {
+  display: none !important;
+}
+
+body[data-page-is-loaded="false"] .preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 1001;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body[data-page-is-loaded="false"] .preloader .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+body[data-page-is-loaded="false"] .preloader .content h2 {
+  font-size: 2.37500rem;
+}
+
+body[data-page-is-loaded="false"] .preloader .content .images {
+  width: 7.8125rem;
+  height: 7.8125rem;
+
+  animation: 2s infinite preloaderChangeImages alternate;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border: 0.1875rem solid var(--black);
+}
+
+body[data-page-is-loaded="false"] .preloader .content p {
+  font-size: 1.5rem;
+}
+
+@keyframes preloaderChangeImages {
+  0% {
+    background-image: url(/icons/panda.png);
+  }
+  25% {
+    background-image: url(/icons/gorilla.png);
+  }
+  50% {
+    background-image: url(/icons/eagle.png);
+  }
+  100% {
+    background-image: url(/icons/alligator.png);
+  }
+}
