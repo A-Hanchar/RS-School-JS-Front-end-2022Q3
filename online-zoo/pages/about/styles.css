@@ -1,0 +1,160 @@
+@import url(/styles/common.css);
+
+@import url(/components/Header/header.css);
+@import url(/components/Footer/footer.css);
+@import url(/components/TopPanda/topPanda.css);
+@import url(/components/Pets/pets.css);
+@import url(/components/PickAndFeedAFriend/pickAndFeedAFriend.css);
+@import url(/components/Testimonials/testimonials.css);
+
+@import url(/styles/components/sectionBackstage.css);
+
+body {
+  overflow-x: hidden;
+}
+
+section.pick-and-feed-a-friend {
+  margin-top: 6.25rem;
+  padding-bottom: 5.875rem;
+}
+
+section.pick-and-feed-a-friend::before,
+section.pick-and-feed-a-friend::after {
+  content: '';
+
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section.pick-and-feed-a-friend::before {
+  
+  width: 18.25rem;
+  height: 28.75rem;
+  
+  left: 0;
+  top: -28.75rem;
+  
+  background-image: url(/images/sectionPickAndFeedAFriend/flower-left.png);
+}
+
+section.pick-and-feed-a-friend::after {
+  width: 23rem;
+  height: 17.1875rem;
+  
+  right: 0;
+  top: -17.1875rem;
+  
+  background-image: url(/images/sectionPickAndFeedAFriend/flower-right.png);
+}
+
+.pick-and-feed-a-friend-content-wrapper {
+  max-height: 52.1875rem;
+}
+
+@media screen and (max-width: 1399px) {
+  section.pick-and-feed-a-friend {
+    margin-top: 8.75rem;
+  }
+
+  section.pick-and-feed-a-friend::before {
+    width: 12.125rem;
+    height: 12.625rem;
+    
+    top: -12.625rem;
+
+    background-image: url(/images/sectionPickAndFeedAFriend/flower-left-small.png);
+  }
+
+  section.pick-and-feed-a-friend::after {
+    width: 15.0625rem;
+    height: 11.25rem;
+
+    top: -11.25rem;
+
+    background-image: url(/images/sectionPickAndFeedAFriend/flower-right-small.png);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  section.pick-and-feed-a-friend {
+    padding-bottom: 3.125rem;
+  }
+
+  .pick-and-feed-a-friend-content-wrapper {
+    gap: 1.375rem;
+  }
+  
+  .pick-and-feed-a-friend-content-title {
+    gap: 1.4375rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section.pick-and-feed-a-friend {
+    margin-top: 6.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  section.pick-and-feed-a-friend::before {
+    width: 8.375rem;
+
+    background-image: url(/images/sectionPickAndFeedAFriend/flower-left-x-small.png);
+  }
+
+  section.pick-and-feed-a-friend::after {
+    width: 10.9375rem;
+    height: 8.1875rem;
+
+    top: -8.1875rem;
+
+    background-image: url(/images/sectionPickAndFeedAFriend/flower-right-x-small.png);
+  }
+
+  .pick-and-feed-a-friend-content-wrapper {    
+    padding: 0.625rem 1.25rem 3.75rem;
+    
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .pick-and-feed-a-friend-content-wrapper {   
+    max-height: none;
+    
+    padding: 1.25rem 0 2.5rem;
+    
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+@media screen and (max-width: 485px) {
+  section.pick-and-feed-a-friend {
+    margin-top: 3.75rem;
+  }
+
+  section.pick-and-feed-a-friend::before {
+    width: 3.625rem;
+    height: 4.5rem;
+
+    top: -4.5rem;
+
+    background-image: url(/images/sectionPickAndFeedAFriend/flower-left-xx-small.png);
+  }
+
+  section.pick-and-feed-a-friend::after {
+    width: 4.25rem;
+    height: 4.4375rem;
+
+    top: -4.4375rem;
+
+    background-image: url(/images/sectionPickAndFeedAFriend/flower-right-xx-small.png);
+  }
+
+  .pick-and-feed-a-friend-content-title {
+    gap: 0.875rem;
+  }
+}
