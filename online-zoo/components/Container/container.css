@@ -1,0 +1,40 @@
+.container {
+  width: 72.5rem;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1399px) {
+  
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    width: 58.75rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 45rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 37.5rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .container {
+    width: 33.75rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    width: calc(100% - 1.25rem);
+  }
+}

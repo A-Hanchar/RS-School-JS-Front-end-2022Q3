@@ -1,0 +1,21 @@
+h2.how-it-work-title {
+  font-size: 2.25rem;
+}
+
+@media screen and (max-width: 767px) {
+  h2.how-it-work-title {
+    margin-bottom: 0.625rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  h2.how-it-work-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  h2.how-it-work-title {
+    margin-bottom: 0.25rem;
+  }
+}

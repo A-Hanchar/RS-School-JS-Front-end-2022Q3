@@ -1,0 +1,23 @@
+@import url(./Content/content.css);
+
+.section-pets {
+  margin-top: 11.25rem;
+}
+
+@media screen and (max-width: 1399px) {
+  .section-pets {
+    margin-top: 8.75rem;
+  } 
+}
+
+@media screen and (max-width: 991px) {
+  .section-pets {
+    margin-top: 5rem;
+  } 
+}
+
+@media screen and (max-width: 575px) {
+  .section-pets {
+    margin-top: 2.5rem;
+  } 
+}

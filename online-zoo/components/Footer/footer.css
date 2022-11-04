@@ -1,0 +1,183 @@
+@import url(./components/SocialLinks/socialLinks.css);
+@import url(./components/Author/author.css);
+@import url(./components/Subscribe/subscribe.css);
+
+footer .footer-content-wrapper {
+  padding-top: 2.5rem;
+  padding-bottom: 3.125rem;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas:
+      "logo . subscribe"
+      "donate . ."
+      "social nav author";
+}
+
+footer .logo {
+  grid-area: logo / logo / logo / logo;
+}
+
+footer .donate-button {
+  grid-area: donate / donate / donate / donate;
+  
+  border-radius: 0.3125rem;
+
+  margin-top: -0.5rem;
+}
+
+footer nav {
+  grid-area: nav / nav / nav / nav;
+  place-self: end end;
+}
+
+footer ul.social-links {
+  grid-area: social / social / social / social;
+}
+
+footer .author-content-wrapper {
+  grid-area: author / author / author / author;
+}
+
+footer form.subscribe {
+  grid-area: subscribe / subscribe / subscribe / subscribe;
+}
+
+@media screen and (max-width: 1199px) {
+  footer .footer-content-wrapper {
+    position: relative;
+
+    column-gap: 0;
+  }
+
+  footer nav {
+    place-self: end center;
+
+    width: 22.625rem;
+    
+    margin-left: -2.5rem;
+  }
+
+  footer .logo {
+    margin-top: 0;
+    margin-bottom: 1.75rem;
+  }
+
+  footer form.subscribe {
+    width: 22.875rem;
+
+    position: absolute;
+    
+    right: 2rem;
+    top: -0.4375rem;
+  }
+
+  footer .donate-button {
+    margin-top: 0;
+  }
+
+  footer ul.social-links {
+    margin-top: 0.375rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  footer .footer-content-wrapper {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "logo social"
+        "donate social"
+        "nav author";
+  }
+
+  footer .footer-content-wrapper {
+    row-gap: 2rem;
+  }
+
+  footer .logo {
+    margin-bottom: 0;
+  }
+
+  footer nav {
+    margin-left: 0;
+  }
+
+  footer ul.social-links {
+    justify-self: end;
+
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer .footer-content-wrapper {
+    row-gap: 1.5625rem;
+  }
+
+  footer .donate-button {
+    margin-top: -2.1875rem;
+  }
+
+  footer nav ul {
+    gap: 2.3125rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  footer .footer-content-wrapper {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    grid-template-columns: auto;
+    justify-content: center;
+    grid-template-areas:
+        "logo"
+        "social"
+        "donate"
+        "author"
+        "nav";
+  }
+
+  footer form.subscribe {
+    width: 100%;
+  }
+
+  footer .footer-content-wrapper > *:not(.author-content-wrapper) {
+    justify-self: center;
+  }
+
+  footer ul.social-links {
+    justify-self: center;
+
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  footer .logo.logo.size-normal {
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    gap: 0.3125rem;
+    
+    border: none;
+  }
+
+  footer .footer-content-wrapper > .author-content-wrapper {
+    padding-right: 2.1875rem;
+    
+    margin-top: 0.4375rem;
+    margin-bottom: 0.4375rem;
+  }
+
+  footer .donate-button {
+    margin-top: 0.1875rem;
+  }
+
+  footer nav ul {
+    gap: 1.875rem;
+    justify-content: center;
+  }
+}

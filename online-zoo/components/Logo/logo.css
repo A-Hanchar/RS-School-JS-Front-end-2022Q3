@@ -1,0 +1,43 @@
+.logo {
+  padding: 0.221875rem 0.296875rem;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  border-style: solid;
+  border-width: 0.0625rem;
+  
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.logo.size-normal {
+  width: 5.125rem;
+  height: 3.25rem;
+
+  font-size: 1.18813rem;
+  line-height: 1.42625rem;
+}
+
+.logo.color-WHITE {
+  color: var(--white);
+  border-color: var(--white);
+}
+
+.logo.color-ORRANGE {
+  color: var(--orrange);
+  border-color: var(--orrange);
+}
+
+.logo .bottom-text img {
+  width: 0.75rem;
+  height: 1.3125rem;
+  
+  position: absolute;
+  top: -0.25rem;
+  left: -0.3125rem;
+  
+  object-fit: cover;
+}

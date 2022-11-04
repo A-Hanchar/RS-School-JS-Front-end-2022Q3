@@ -1,0 +1,43 @@
+fieldset.pick-and-feed-a-friend-form-amount-type {
+  display: flex;
+  gap: 3.125rem;
+}
+
+fieldset.pick-and-feed-a-friend-form-amount-type label {
+  padding-left: calc(1rem + 0.625rem);
+  cursor: pointer;
+}
+
+fieldset.pick-and-feed-a-friend-form-amount-type label input {
+  display: none;
+}
+
+fieldset.pick-and-feed-a-friend-form-amount-type label span {
+  width: 1rem;
+  height: 1rem;
+  box-sizing: border-box;
+
+  background: none;
+  
+  border: 0.0625rem solid var(--orrange);
+  border-radius: 50%;
+  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  
+  margin: auto;
+}
+
+fieldset.pick-and-feed-a-friend-form-amount-type label input:checked ~ span {
+  background: var(--green);
+  border: none;
+}
+
+@media screen and (max-width: 1199px) {
+  fieldset.pick-and-feed-a-friend-form-amount-type {
+    margin-top: 0.25rem;
+    margin-left: -1.0625rem;
+  }
+}

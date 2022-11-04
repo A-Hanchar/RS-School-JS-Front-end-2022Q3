@@ -1,0 +1,20 @@
+@import url(./components/Content/content.css);
+
+.pick-and-feed-a-friend {
+  padding-top: 4.3125rem;
+  padding-bottom: 6.25rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .pick-and-feed-a-friend {
+    padding-top: 1.875rem;
+    padding-bottom: 3.125rem;
+  } 
+}
+
+@media screen and (max-width: 767px) {
+  .pick-and-feed-a-friend {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  } 
+}

@@ -1,0 +1,76 @@
+:root {
+  --buttonSliderNavigationWidth: 3.875rem;
+}
+
+button.slider-navigation {
+  width: var(--buttonSliderNavigationWidth);
+  height: 3.875rem;
+  
+  cursor: pointer;
+}
+
+/* Button Colors */
+button.slider-navigation.button-ORRANGE {
+  background-color: var(--orrange);
+  background: var(--orrangeGradient);
+  border: 0;
+  
+  color: var(--white);
+}
+
+button.slider-navigation.button-ORRANGE:hover {
+  background-color: var(--orrangeDark);
+  background: var(--orrangeDarkGradient);
+}
+
+/* Draw Arrows */
+button.slider-navigation::before {
+  content: "";
+  box-sizing: border-box;
+
+  width: 0.375rem;
+  height: 0.375rem;
+
+  position: absolute;
+  top: calc(50% - (0.375rem / 2));
+
+  border-width: 0.01875rem 0.01875rem 0 0;
+  border-style: solid;
+}
+
+button.slider-navigation::after {
+  content: "";
+  height: 0.06rem;
+  width: 1rem;
+  
+  position: absolute;
+  top: calc(50% - 0.03125rem / 2);
+}
+
+/* Arrow Colors */
+button.slider-navigation.arrow-WHITE::before {
+  border-color: var(--white);
+}
+
+button.slider-navigation.arrow-WHITE::after {
+  background: var(--white);
+}
+
+/* Arrows Position */
+button.slider-navigation.direction-left::before {
+  left: calc(50% - (1.125rem / 2));
+
+  transform: rotate(-135deg);
+}
+button.slider-navigation.direction-left::after {
+  left: calc(50% - 1rem / 2 - 0.0625rem);
+}
+
+button.slider-navigation.direction-right::before {
+  right: calc(50% - (1.125rem / 2));
+  
+  transform: rotate(45deg);
+}
+button.slider-navigation.direction-right::after {
+  right: calc(50% - 1rem / 2 - 0.0625rem);
+}

@@ -1,0 +1,85 @@
+@import url(./Title/title.css);
+@import url(./LeaveFeedback/leaveFeedback.css);
+@import url(./Slider/slider.css);
+
+.section-testimonials {
+  margin-top: 8.75rem;
+  padding-bottom: 11.25rem;
+}
+
+.section-testimonials::after {
+  content: '';
+  
+  width: 15.4375rem;
+  height: 18.4375rem;
+
+  position: absolute;
+  right: 0;
+  bottom: -1.25rem;
+
+  background-image: url(/online-zoo/images/sectionTestimonials/leaf.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  z-index: -1;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-testimonials {
+    margin-top: 6.4375rem;
+    padding-bottom: 8.75rem;
+  }
+
+  .section-testimonials::after {
+    content: '';
+    width: 12.25rem;
+    height: 20.3125rem;
+    
+    bottom: -5rem;
+
+    background-image: url(/online-zoo/images/sectionTestimonials/leaf-small.png);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-testimonials {
+    margin-top: 3.75rem;
+    padding-bottom: 5rem;
+  }
+
+  .section-testimonials::after {
+    content: '';
+    width: 7.25rem;
+    height: 12.75rem;
+    
+    bottom: -4.3125rem;
+    right: -0.25rem;
+
+    background-image: url(/online-zoo/images/sectionTestimonials/leaf-x-small.png);
+  }
+
+  .testimonials-content-wrapper {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section-testimonials {
+    margin-top: 1.875rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .section-testimonials::after {
+    content: '';
+    width: 3.1875rem;
+    height: 5.875rem;
+    
+    bottom: -1.875rem;
+
+    background-image: url(/online-zoo/images/sectionTestimonials/leaf-xx-small.png);
+  }
+}

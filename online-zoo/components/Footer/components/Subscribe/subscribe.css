@@ -1,0 +1,17 @@
+@import url(./components/SubmitButton/submitButton.css);
+@import url(./components/InputEmail/inputEmail.css);
+
+form.subscribe {
+  justify-self: end;
+  display: grid;
+  padding-top: 0.4375rem;
+  grid-template-areas:
+      "title ."
+      "inputEmail submit";
+}
+
+form.subscribe h3 {
+  margin-bottom: 0.875rem;
+  font-size: 1.5rem;
+  grid-area: title / title / title / title;
+}

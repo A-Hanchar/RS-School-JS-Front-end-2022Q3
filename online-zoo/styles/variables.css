@@ -1,0 +1,16 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --yellow: #ffee2e;
+  --orrange: #FE9013;
+  --orrangeDark: #E47209;
+  --blueBlack: #333B41;
+  --gray: #767474;
+  --grayLight: #F1F3F2;
+  --gray4: #BDBDBD;
+  --green: #4B9200;
+  --red: #d31414;
+  --orrangeGradient: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  --orrangeDarkGradient: linear-gradient(113.96deg, #E47209 1.49%, #F9804B 101.44%);
+  --pinkGradient: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}

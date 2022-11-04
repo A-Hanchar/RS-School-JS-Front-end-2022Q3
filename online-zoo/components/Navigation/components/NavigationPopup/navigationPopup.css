@@ -1,0 +1,19 @@
+.navigation-popup-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+
+  padding: 0.625rem 0.625rem 2.5rem;
+}
+
+.navigation-popup-content-wrapper nav {
+  height: 100%;
+}
+
+.navigation-popup-content-wrapper nav ul {
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 0.9375rem;
+  width: 100%;
+}

@@ -1,0 +1,47 @@
+@import url(../Title/title.css);
+@import url(../WatchOnlineButton/watchOnlineButton.css);
+
+.top-panda-content-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-panda-content-wrapper .content {
+  width: max-content;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.75rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .top-panda-content-wrapper {
+    padding-left: 0.3125rem;
+    padding-right: 0.3125rem;
+  }
+  
+  .top-panda-content-wrapper .content {
+    gap: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .top-panda-content-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .top-panda-content-wrapper .content {
+    width: 100%;
+
+    gap: 0;
+  }
+
+  .top-panda-content-wrapper .content button {
+    align-self: start;
+
+    margin-top: -0.3125rem;
+    margin-left: 0.25rem;
+  }
+}

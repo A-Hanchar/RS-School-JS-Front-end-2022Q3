@@ -1,0 +1,24 @@
+
+button.testimonials-leave-feedback {
+  margin-top: 1.9375rem;
+  border-radius: 0.3125rem;
+}
+@media screen and (max-width: 1199px) {
+  button.testimonials-leave-feedback {
+    margin-top: 3.1875rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  button.testimonials-leave-feedback {
+    max-width: 15rem;
+    
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  button.testimonials-leave-feedback {
+    margin-top: 2rem;
+  }
+}

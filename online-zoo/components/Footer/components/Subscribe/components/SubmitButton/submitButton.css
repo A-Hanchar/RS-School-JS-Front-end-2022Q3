@@ -1,0 +1,22 @@
+.submit-button {
+  grid-area: submit / submit / submit / submit;
+  border-radius: 0.3125rem;
+
+  width: 8.0625rem;
+  height: 2.625rem;
+  
+  border-width: 0.0625rem;
+  border-style: solid;
+}
+
+.submit-button.border-orrange {
+  border-color: var(--orrange);
+}
+
+.submit-button.border-red {
+  border-color: var(--red);
+}
+
+.submit-button.border-green {
+  border-color: var(--green);
+}

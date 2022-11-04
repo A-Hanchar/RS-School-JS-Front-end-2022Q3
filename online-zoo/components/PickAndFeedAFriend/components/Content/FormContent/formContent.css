@@ -1,0 +1,19 @@
+@import url(./TopInformation/topInformation.css);
+@import url(./PandaCountDeads/pandaCountDeads.css);
+@import url(./Form/form.css);
+
+.form-content-wrapper {
+  margin-top: 4.375rem;
+}
+
+@media screen and (max-width: 767px) {
+  .form-content-wrapper {
+    margin-top: 3.4375rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .form-content-wrapper {
+    margin-top: 1.125rem;
+  }
+}

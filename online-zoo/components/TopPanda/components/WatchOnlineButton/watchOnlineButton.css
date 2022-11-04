@@ -1,0 +1,10 @@
+.watch-online-button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+button.watch-online-button {
+  border-radius: 1.5625rem;
+}

@@ -1,0 +1,15 @@
+@import url(./Title/title.css);
+@import url(./Description/description.css);
+@import url(./Cards/cards.css);
+@import url(./FeedButton/feedButton.css);
+
+.how-it-work {
+  display: grid;
+  gap: 2.75rem;
+}
+
+@media screen and (max-width: 991px) {
+  .how-it-work {
+    grid-gap: 1.25rem;
+  }
+}

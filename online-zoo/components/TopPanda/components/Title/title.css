@@ -1,0 +1,92 @@
+h2.top-panda-title {
+  max-width: 31.25rem;
+  
+  font-size: 6.656rem;
+  line-height: 75%;
+  
+  z-index: 1;
+}
+
+h2.top-panda-title::before {
+  content: '';
+
+  width: 29.0625rem;
+  height: 29.0625rem;
+
+  position: absolute;
+  left: -4.6875rem;
+  top: -4.6875rem;
+
+  border-radius: 50%;
+
+  z-index: -1;
+}
+
+h2.top-panda-title.circleColor-ORRANGE::before {
+  background: var(--orrangeGradient);
+}
+
+@media screen and (max-width: 1199px) {
+  h2.top-panda-title {
+    font-size: 5.325rem;
+    line-height: 3.99375rem;
+  }
+
+  h2.top-panda-title::before {
+    width: 22.9375rem;
+    height: 22.9375rem;
+
+    left: -0.5625rem;
+    top: -3.5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  h2.top-panda-title {
+    font-size: 4rem;
+    line-height: 3.4375rem;
+    max-width: 18.125rem;
+
+    align-self: end;
+  }
+
+  h2.top-panda-title::before {
+    width: 18.75rem;
+    height: 18.75rem;
+
+    left: -4.5rem;
+    top: -2.375rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h2.top-panda-title {
+    font-size: 3.375rem;
+    line-height: 2.5rem;
+    max-width: 15.625rem;
+  }
+
+  h2.top-panda-title::before {
+    width: 14.85rem;
+    height: 14.85rem;
+
+    left: -2.125rem;
+    top: -2.5rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  h2.top-panda-title {
+    font-size: 1.6875rem;
+    line-height: 1.25rem;
+    max-width: 8rem;
+  }
+
+  h2.top-panda-title::before {
+    width: 7.4375rem;
+    height: 7.4375rem;
+
+    left: -1.25rem;
+    top: -1.5rem;
+  }
+}
