@@ -1,0 +1,53 @@
+.sources {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  position: sticky;
+  top: 0;
+  max-height: 45px;
+
+  padding: 16px;
+  font: 300 1em 'Fira Sans', sans-serif;
+}
+
+p ~ .sources {
+  display: none;
+}
+
+.sources label {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sources input {
+  width: 250px;
+  height: 24px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding-inline: 6px;
+}
+
+
+@media (max-width: 991px) {
+  .sources {
+    background-color: #000;
+    z-index: 999;
+    color: #fff;
+  }
+
+  .sources input {
+    background-color: #000;
+    color: #fff;
+    border: 1px dashed #fff;
+  }
+}
+
+@media (max-width: 575px) {
+  .sources {
+    flex-direction: column;
+    max-height: 95px;
+    box-sizing: border-box;
+  }
+}

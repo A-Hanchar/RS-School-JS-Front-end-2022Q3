@@ -1,0 +1,90 @@
+:root {
+  --headerHeight: 80px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #000;
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  font-family: sans-serif;
+
+  height: 100vh;
+  
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  max-width: 100%;
+  height: var(--headerHeight);
+  box-sizing: border-box;
+
+  padding: 16px;
+
+  background-color: #000;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+main {
+  background-color: rgba(253, 253, 255, 0.5);
+  overflow: auto;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 10px;
+  align-items: center;
+}
+
+footer .rs-school {
+  display: block;
+  height: 100%;
+}
+
+footer .rs-school img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer .author-wrapper {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+footer .author-wrapper a {
+  color: inherit;
+}
+
+@media (max-width: 991px) {
+  main {
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  footer .rs-school {
+    height: 75%;
+  }
+
+  footer .author-wrapper {
+    font-size: 16px;
+  }
+}
