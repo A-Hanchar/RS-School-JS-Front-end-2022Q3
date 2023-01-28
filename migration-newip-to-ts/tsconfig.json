@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src/",
+    "outDir": "./dist/",
+    "target": "ES6",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "noImplicitAny": true,
+    "strict": true,
+    "sourceMap": true,
+    "allowJs": false
+  },
+  "include": ["./src"],
+  "exclude": ["node_modules"]
+}
